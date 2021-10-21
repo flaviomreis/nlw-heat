@@ -1,0 +1,24 @@
+###
+POST http://localhost:4000/authenticate
+Content-Type: application/json
+
+{
+  "code": "53115c89ae4159689cd9"
+}
+
+###
+POST http://localhost:4000/messages
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJGbMOhdmlvIE1lbmV6ZXMgZG9zIFJlaXMiLCJhdmF0YXJfdXJsIjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91Lzk5MzMwMDU_dj00IiwiaWQiOiJhMTg1YzU2ZS1lZmUzLTQ1MmUtOTdiYi04YmFjMzk4ZjRjNTUifSwiaWF0IjoxNjM0ODMyNjYwLCJleHAiOjE2MzQ5MTkwNjAsInN1YiI6ImExODVjNTZlLWVmZTMtNDUyZS05N2JiLThiYWMzOThmNGM1NSJ9.HhEYaawRBxn4xlQwydp-S7Gmg6erUIBRpt1WFRCJpIs
+
+{
+  "text": "Message 08"
+}
+
+###
+GET http://localhost:4000/messages/last3
+
+###
+GET http://localhost:4000/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJGbMOhdmlvIE1lbmV6ZXMgZG9zIFJlaXMiLCJhdmF0YXJfdXJsIjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91Lzk5MzMwMDU_dj00IiwiaWQiOiJhMTg1YzU2ZS1lZmUzLTQ1MmUtOTdiYi04YmFjMzk4ZjRjNTUifSwiaWF0IjoxNjM0ODMyNjYwLCJleHAiOjE2MzQ5MTkwNjAsInN1YiI6ImExODVjNTZlLWVmZTMtNDUyZS05N2JiLThiYWMzOThmNGM1NSJ9.HhEYaawRBxn4xlQwydp-S7Gmg6erUIBRpt1WFRCJpIs
